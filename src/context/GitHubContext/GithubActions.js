@@ -8,10 +8,11 @@ export const ACTIONS = {
 
 const GITHUB_URL = process.env.REACT_APP_GITHUB_URL
 const GITHUB_TOKEN = process.env.REACT_APP_GITHUB_TOKEN
+console.log(GITHUB_TOKEN);
 
 const github = axios.create({
     baseURL: GITHUB_URL,
-    headers: { Authorization: `token ${GITHUB_TOKEN}` }
+    // headers: { Authorization: `token ${GITHUB_TOKEN}` }
 })
 
 export const searchUsers = async (text) => {
@@ -19,6 +20,7 @@ export const searchUsers = async (text) => {
         q: text
     })
     const response = await github.get(`/search/users?${params}`)
+    // console.log(response.data.items);
     return response.data.items
 };
 

@@ -15,6 +15,7 @@ const UserSearch = () => {
   };
   const handleSubmit = async (e) => {
     e.preventDefault();
+    console.log("hello");
     if (text === "") {
       setAlert("Please enter something", "error");
     } else {
