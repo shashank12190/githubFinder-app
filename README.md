@@ -1,3 +1,6 @@
+Github Finder App
+App to search Github users and display their information such as followers followings etc. It is the most up to date version of this project.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
